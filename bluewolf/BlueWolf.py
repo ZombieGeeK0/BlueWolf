@@ -1,5 +1,5 @@
 from colorama import Fore, Style
-import os, socket, sys, requests, pywhatkit, pyshorteners, base64, qrcode
+import os, socket, sys, requests, pywhatkit, pyshorteners, base64, qrcode, sqlite3, platform
 from faker import Faker  
 from random import sample
 import PyPDF2
@@ -169,7 +169,7 @@ def get_size():
     choice = input(color.WHITE + '\n[&] Enter the file or path to the file to view size: ')
 
     sizefile = os.stat(choice).st_size
-    print(color.WHITE + '[&] The size of the file is: ' + color.BLUE + str(sizefile) + color.WHITE + 'bytes')
+    print(color.WHITE + '[&] The size of the file is: ' + color.BLUE + str(sizefile) + color.WHITE + ' bytes')
     ret()
 
 def qr_code():
@@ -188,6 +188,81 @@ def qr_code():
         error()
 
     ret()  
+
+def clear_chrome_history():
+    if platform.system() == 'Windows':
+        history_path = os.path.expanduser('~') + r'\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\History'
+    elif platform.system() == 'Linux':
+        history_path = os.path.expanduser('~') + '/.config/google-chrome/Default/History'
+    else:
+        print(color.WHITE + f'[&] System {color.BLUE}not supported{color.WHITE} for Chrome')
+        return
+    
+    if os.path.exists(history_path):
+        conn = sqlite3.connect(history_path)
+        cursor = conn.cursor()
+
+        cursor.execute("DELETE FROM urls")
+        conn.commit()
+
+        cursor.close()
+        conn.close()
+
+        print(color.WHITE + '[&] Chrome history {color.BLUE}deleted{} successfully')
+    else:
+        print(color.WHITE + "[&] Chrome historial archive " + color.BLUE + 'not found')
+
+def clear_firefox_history():
+    if platform.system() == "Windows":
+        profiles_path = os.path.expanduser('~') + r"\AppData\Roaming\Mozilla\Firefox\Profiles"
+    elif platform.system() == "Linux":
+        profiles_path = os.path.expanduser('~') + "/.mozilla/firefox/"
+    else:
+        print(color.WHITE + f'[&] System {color.BLUE}not supported{color.WHITE} for Firefox')
+        return
+
+    for root, dirs, files in os.walk(profiles_path):
+        for dir in dirs:
+            profile_path = os.path.join(root, dir)
+            places_path = os.path.join(profile_path, "places.sqlite")
+            if os.path.exists(places_path):
+                conn = sqlite3.connect(places_path)
+                cursor = conn.cursor()
+
+                cursor.execute("DELETE FROM moz_historyvisits")
+                cursor.execute("DELETE FROM moz_places")
+                conn.commit()
+
+                cursor.close()
+                conn.close()
+
+                print(color.WHITE + '[&] Firefox history {color.BLUE}deleted{} successfully')
+                return
+
+    print(color.WHITE + "[&] Firefox historial archive " + color.BLUE + 'not found')
+
+def clear_browser_history():
+    browsers = {
+        "Chrome": clear_chrome_history,
+        "Firefox": clear_firefox_history,
+    }
+
+    for browser, clear_func in browsers.items():
+        try:
+            clear_func()
+        except Exception as e:
+            print(f"Error al intentar borrar el historial de {browser}: {e}")
+
+def history():
+    print(color.WHITE + '\n[&] Cleaning history...')
+    try:
+        clear_browser_history()
+        ret()
+
+    except:
+        error()
+
+    ret()
 
 def main():
     clear()
@@ -213,7 +288,7 @@ def main():
 [03]: Send Discord message                            [14]: Encrypt plain text with base64
 [04]: Generate false IP address                       [15]: Obtener el espacio que ocupa un archivo
 [05]: Generate false phone number                     [16]: Generate the QR Code of a URL
-[06]: Send WhatsApp message
+[06]: Send WhatsApp message                           [17]: Clear the browser history
 [07]: Convert a plain text message in binary code
 [08]: View parrot.live
 [09]: Credits and info about this proyect
@@ -241,6 +316,7 @@ def main():
     elif choice == '14': enc_base64()
     elif choice == '15': get_size()
     elif choice == '16': qr_code()
+    elif choice == '17': history()
     else: error()
 
 main()
