@@ -133,7 +133,7 @@ def main():
         change_ip()
 
     else:
-        error()
+        error
 
 
 main()
