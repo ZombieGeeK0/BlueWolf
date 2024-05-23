@@ -36,44 +36,44 @@ def error():
     ret()
 
 def get_ip():
-    print(color.WHITE + '\n[&] Your IP adress is: ' + color.BLUE + ip)
+    print(color.WHITE + '\n[&]: Your IP adress is: ' + color.BLUE + ip)
     ret()
 
 def verify():
     try:
         res = requests.get('https://www.google.com')
-        print(color.WHITE + f'\n[&] You are {color.BLUE}connected{color.WHITE} to Internet')
+        print(color.WHITE + f'\n[&]: You are {color.BLUE}connected{color.WHITE} to Internet')
     except:
-        print(color.WHITE + f"\n[&] You {color.BLUE}aren't connected{color.WHITE} to Internet")
+        print(color.WHITE + f"\n[&]: You {color.BLUE}aren't connected{color.WHITE} to Internet")
     ret()
 
 def send_discord():
     try:
-        webhook = input(color.WHITE + '\n[&] Enter the URL of your server WebHook: ')
-        message = input(color.WHITE + '[&] Enter the message to send: ')
+        webhook = input(color.WHITE + '\n[&]: Enter the URL of your server WebHook: ')
+        message = input(color.WHITE + '[&]: Enter the message to send: ')
         requests.post(webhook, json={'username': 'BlueWolf', 'content': message})
-        print(color.WHITE + f'[&] Message {color.BLUE}sended{color.WHITE} successfully')
+        print(color.WHITE + f'[&]: Message {color.BLUE}sended{color.WHITE} successfully')
 
     except:
         error()
 
 def gen_ip():
     false_ip = faker.ipv4() 
-    print(color.WHITE + '\n[&] The false IP address is: ' + color.BLUE + false_ip)
+    print(color.WHITE + '\n[&]: The false IP address is: ' + color.BLUE + false_ip)
     ret()
 
 def gen_phone():
     false_phone = faker.phone_number()
-    print(color.WHITE + '\n[&] The false phone number is: ' + color.BLUE + false_phone)
+    print(color.WHITE + '\n[&]: The false phone number is: ' + color.BLUE + false_phone)
     ret()
 
 def send_whatsapp():
     try:
-        choice = input(color.WHITE + '\n[&] Enter the phone number to send the message: ')
-        message = input(color.WHITE + '[&] Enter the message to send: ')
+        choice = input(color.WHITE + '\n[&]: Enter the phone number to send the message: ')
+        message = input(color.WHITE + '[&]: Enter the message to send: ')
         pywhatkit.sendwhatmsg_instantly(choice, message)
         
-        print(f'\n[&] Message {color.BLUE}sended{color.WHITE} successfully')
+        print(f'\n[&]: Message {color.BLUE}sended{color.WHITE} successfully')
         
     except:
         error()
@@ -81,9 +81,9 @@ def send_whatsapp():
     ret()
 
 def binary():
-    choice = input(color.WHITE + '\n[&] Enter the plain text to convert: ')
+    choice = input(color.WHITE + '\n[&]: Enter the plain text to convert: ')
     binary = ' '.join(format(ord(caracter), '08b') for caracter in choice)
-    print(color.WHITE + '[&] The binary code generated is: ' + color.BLUE + binary)
+    print(color.WHITE + '[&]: The binary code generated is: ' + color.BLUE + binary)
     ret()
 
 def parrot():
@@ -91,7 +91,7 @@ def parrot():
         os.system('curl parrot.live')
 
     except KeyboardInterrupt:
-        print(color.WHITE + f'\n\n[&] Operation {color.BLUE}interrupted')
+        print(color.WHITE + f'\n\n[&]: Operation {color.BLUE}interrupted')
     
     except:
         error()
@@ -100,10 +100,10 @@ def parrot():
 
 def info():
     choice = f'''
-[&] BlueWolf By {color.BLUE}ZombieGeeK0
-{color.WHITE}[&] GitHub: {color.BLUE}https://github.com/ZombieGeeK0/BlueWolf
-{color.WHITE}[&] {color.BLUE}©2024{color.WHITE} By ZombieGeeK0
-{color.WHITE}[&] BlueTiger is a multitool make with only {color.BLUE}ethical purposes. 
+[&]: BlueWolf By {color.BLUE}ZombieGeeK0
+{color.WHITE}[&]: GitHub: {color.BLUE}https://github.com/ZombieGeeK0/BlueWolf
+{color.WHITE}[&]: {color.BLUE}©2024{color.WHITE} By ZombieGeeK0
+{color.WHITE}[&]: BlueTiger is a multitool make with only {color.BLUE}ethical purposes. 
 '''
     print(color.WHITE + choice)
     ret()
@@ -112,11 +112,11 @@ def get_public():
     res = requests.get('https://api.ipify.org?format=json')
     public_ip = res.json()['ip']
 
-    print(color.WHITE + f'\n[&] The public IP adress is: ' + color.BLUE + public_ip)
+    print(color.WHITE + f'\n[&]: The public IP adress is: ' + color.BLUE + public_ip)
     ret()
 
 def generate_pass():   
-    measure = int(input(color.WHITE + '\n[&] Enter the measure in characters of your password: '))
+    measure = int(input(color.WHITE + '\n[&]: Enter the measure in characters of your password: '))
 
     abc_lower = "abcdefghijklmnopqrstuvwxyz"
     abc_upper = abc_lower.upper() 
@@ -129,21 +129,21 @@ def generate_pass():
     
 
     password_result = "".join(password)
-    print(color.WHITE + '[&] The result password is: ' + color.BLUE + password_result)
+    print(color.WHITE + '[&]: The result password is: ' + color.BLUE + password_result)
     ret()
 
 def read_pdf():
     choice = input(color.WHITE + '\n[&] Enter the path or the name of the PDF file to read: ')
     reader = PyPDF2.PdfReader(choice)
 
-    print(color.WHITE + '[&] The PDF have ' + color.BLUE + str(len(reader.pages)) + color.WHITE + 'pages')
-    print(color.WHITE + '[&] The text of the PDF file is: \n' + color.BLUE + reader.pages[0].extract_text())
+    print(color.WHITE + '[&]: The PDF have ' + color.BLUE + str(len(reader.pages)) + color.WHITE + 'pages')
+    print(color.WHITE + '[&]: The text of the PDF file is: \n' + color.BLUE + reader.pages[0].extract_text())
 
     ret()
 
 def mask_url():
     s = pyshorteners.Shortener()
-    choice = input(color.WHITE + '\n[&] Enter the URL to mask: ')
+    choice = input(color.WHITE + '\n[&]: Enter the URL to mask: ')
     try:
         ey = s.isgd.short(choice)
         mod = input(color.WHITE + '[&] Enter the domain you want to supplant (eg. https://google.com): ')
@@ -157,32 +157,32 @@ def mask_url():
     ret()
 
 def enc_base64():
-    choice = input(color.WHITE + '\n[&] Enter the plain text to encode: ')
+    choice = input(color.WHITE + '\n[&]: Enter the plain text to encode: ')
 
     text_bytes = choice.encode('utf-8')
     encrypted_text = base64.b64encode(text_bytes)
 
-    print(color.WHITE + '[&] The text encrypted in base64 is: ' + color.BLUE + str(encrypted_text.decode("utf-8")))
+    print(color.WHITE + '[&]: The text encrypted in base64 is: ' + color.BLUE + str(encrypted_text.decode("utf-8")))
     ret()
 
 def get_size():
     choice = input(color.WHITE + '\n[&] Enter the file or path to the file to view size: ')
 
     sizefile = os.stat(choice).st_size
-    print(color.WHITE + '[&] The size of the file is: ' + color.BLUE + str(sizefile) + color.WHITE + ' bytes')
+    print(color.WHITE + '[&]: The size of the file is: ' + color.BLUE + str(sizefile) + color.WHITE + ' bytes')
     ret()
 
 def qr_code():
     try:
         choice = input(color.WHITE + '\n[&] Enter the URL or text to generate in the QR Code: ')
-        arch = input(color.WHITE + '[&] Enter the archive name to save the QR Code (the .png is auto completed): ')
+        arch = input(color.WHITE + '[&]: Enter the archive name to save the QR Code (the .png is auto completed): ')
 
         img = qrcode.make(choice)
         f = open(arch + '.png', "wb")
         img.save(f)
         f.close()
 
-        print(color.WHITE + '\n[&] The QR Code is generated in the file ' + color.BLUE + arch)
+        print(color.WHITE + '\n[&]: The QR Code is generated in the file ' + color.BLUE + arch)
 
     except:
         error()
@@ -195,7 +195,7 @@ def clear_chrome_history():
     elif platform.system() == 'Linux':
         history_path = os.path.expanduser('~') + '/.config/google-chrome/Default/History'
     else:
-        print(color.WHITE + f'[&] System {color.BLUE}not supported{color.WHITE} for Chrome')
+        print(color.WHITE + f'[&]: System {color.BLUE}not supported{color.WHITE} for Chrome')
         return
     
     if os.path.exists(history_path):
@@ -208,9 +208,9 @@ def clear_chrome_history():
         cursor.close()
         conn.close()
 
-        print(color.WHITE + '[&] Chrome history {color.BLUE}deleted{} successfully')
+        print(color.WHITE + f'[&]: Chrome history {color.BLUE}deleted{color.WHITE} successfully')
     else:
-        print(color.WHITE + "[&] Chrome historial archive " + color.BLUE + 'not found')
+        print(color.WHITE + f"[&]: Chrome historial archive " + color.BLUE + 'not found')
 
 def clear_firefox_history():
     if platform.system() == "Windows":
@@ -236,10 +236,10 @@ def clear_firefox_history():
                 cursor.close()
                 conn.close()
 
-                print(color.WHITE + '[&] Firefox history {color.BLUE}deleted{} successfully')
+                print(color.WHITE + f'[&] Firefox history {color.BLUE}deleted{color.WHITE} successfully')
                 return
 
-    print(color.WHITE + "[&] Firefox historial archive " + color.BLUE + 'not found')
+    print(color.WHITE + f"[&] Firefox historial archive " + color.BLUE + 'not found')
 
 def clear_browser_history():
     browsers = {
@@ -251,7 +251,7 @@ def clear_browser_history():
         try:
             clear_func()
         except Exception as e:
-            print(f"Error al intentar borrar el historial de {browser}: {e}")
+            error()
 
 def history():
     print(color.WHITE + '\n[&] Cleaning history...')
@@ -267,18 +267,18 @@ def history():
 def main():
     clear()
     title = '''
- ▄▄▄▄    ██▓     █    ██ ▓█████  █     █░ ▒█████   ██▓      █████▒
-▓█████▄ ▓██▒     ██  ▓██▒▓█   ▀ ▓█░ █ ░█░▒██▒  ██▒▓██▒    ▓██   ▒ 
-▒██▒ ▄██▒██░    ▓██  ▒██░▒███   ▒█░ █ ░█ ▒██░  ██▒▒██░    ▒████ ░ 
-▒██░█▀  ▒██░    ▓▓█  ░██░▒▓█  ▄ ░█░ █ ░█ ▒██   ██░▒██░    ░▓█▒  ░ 
-░▓█  ▀█▓░██████▒▒▒█████▓ ░▒████▒░░██▒██▓ ░ ████▓▒░░██████▒░▒█░    
-░▒▓███▀▒░ ▒░▓  ░░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▓░▒ ▒  ░ ▒░▒░▒░ ░ ▒░▓  ░ ▒ ░    
-▒░▒   ░ ░ ░ ▒  ░░░▒░ ░ ░  ░ ░  ░  ▒ ░ ░    ░ ▒ ▒░ ░ ░ ▒  ░ ░      
- ░    ░   ░ ░    ░░░ ░ ░    ░     ░   ░  ░ ░ ░ ▒    ░ ░    ░ ░    
- ░          ░  ░   ░        ░  ░    ░        ░ ░      ░  ░        
-      ░                                                  
-          [&]: BlueWolf By ZombieGeeK0 
-          [&]: GitHub: https://github.com/ZombieGeeK0        
+            ▄▄▄▄    ██▓     █    ██ ▓█████  █     █░ ▒█████   ██▓      █████▒
+            ▓█████▄ ▓██▒     ██  ▓██▒▓█   ▀ ▓█░ █ ░█░▒██▒  ██▒▓██▒    ▓██   ▒ 
+            ▒██▒ ▄██▒██░    ▓██  ▒██░▒███   ▒█░ █ ░█ ▒██░  ██▒▒██░    ▒████ ░ 
+            ▒██░█▀  ▒██░    ▓▓█  ░██░▒▓█  ▄ ░█░ █ ░█ ▒██   ██░▒██░    ░▓█▒  ░ 
+            ░▓█  ▀█▓░██████▒▒▒█████▓ ░▒████▒░░██▒██▓ ░ ████▓▒░░██████▒░▒█░    
+            ░▒▓███▀▒░ ▒░▓  ░░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▓░▒ ▒  ░ ▒░▒░▒░ ░ ▒░▓  ░ ▒ ░    
+            ▒░▒   ░ ░ ░ ▒  ░░░▒░ ░ ░  ░ ░  ░  ▒ ░ ░    ░ ▒ ▒░ ░ ░ ▒  ░ ░      
+            ░    ░   ░ ░    ░░░ ░ ░    ░     ░   ░  ░ ░ ░ ▒    ░ ░    ░ ░    
+            ░          ░  ░   ░        ░  ░    ░        ░ ░      ░  ░        
+                ░                                                  
+                    [&]: BlueWolf By ZombieGeeK0 
+                    [&]: GitHub: https://github.com/ZombieGeeK0        
 '''
     print(color.BLUE + title)
     options = '''
