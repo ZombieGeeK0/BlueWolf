@@ -104,6 +104,7 @@ def info():
 {color.WHITE}[&] GitHub: {color.BLUE}https://github.com/ZombieGeeK0/BlueWolf
 {color.WHITE}[&] {color.BLUE}©2024{color.WHITE} By ZombieGeeK0
 {color.WHITE}[&] BlueTiger is a multitool make with only {color.BLUE}ethical purposes. 
+{color.WHITE}[&] Web page: {color.BLUE}zombiegeek0.github.io
 '''
     print(color.WHITE + choice)
     ret()
