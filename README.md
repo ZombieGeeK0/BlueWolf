@@ -37,5 +37,28 @@ git clone https://github.com/ZombieGeeK0/BlueWolf && cd redtiger && python3 inst
 ### 💻 FUNCTIONALITIES 💻
 
 ```
+                    ▄▄▄▄    ██▓     █    ██ ▓█████  █     █░ ▒█████   ██▓      █████▒
+                    ▓█████▄ ▓██▒     ██  ▓██▒▓█   ▀ ▓█░ █ ░█░▒██▒  ██▒▓██▒    ▓██   ▒ 
+                    ▒██▒ ▄██▒██░    ▓██  ▒██░▒███   ▒█░ █ ░█ ▒██░  ██▒▒██░    ▒████ ░ 
+                    ▒██░█▀  ▒██░    ▓▓█  ░██░▒▓█  ▄ ░█░ █ ░█ ▒██   ██░▒██░    ░▓█▒  ░ 
+                    ░▓█  ▀█▓░██████▒▒▒█████▓ ░▒████▒░░██▒██▓ ░ ████▓▒░░██████▒░▒█░    
+                    ░▒▓███▀▒░ ▒░▓  ░░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▓░▒ ▒  ░ ▒░▒░▒░ ░ ▒░▓  ░ ▒ ░    
+                    ▒░▒   ░ ░ ░ ▒  ░░░▒░ ░ ░  ░ ░  ░  ▒ ░ ░    ░ ▒ ▒░ ░ ░ ▒  ░ ░      
+                    ░    ░   ░ ░    ░░░ ░ ░    ░     ░   ░  ░ ░ ░ ▒    ░ ░    ░ ░    
+                    ░          ░  ░   ░        ░  ░    ░        ░ ░      ░  ░        
+                        ░                                                  
+                            [&]: BlueWolf By ZombieGeeK0 
+                            [&]: GitHub: https://github.com/ZombieGeeK0        
 
+    [00]: Exit the program                                [11]: Generate a sure password
+    [01]: Get my IP address                               [12]: Read PDF file
+    [02]: Verify the Internet connection                  [13]: Mask an URL
+    [03]: Send Discord message                            [14]: Encrypt plain text with base64
+    [04]: Generate false IP address                       [15]: Obtener el espacio que ocupa un archivo
+    [05]: Generate false phone number                     [16]: Generate the QR Code of a URL
+    [06]: Send WhatsApp message                           [17]: Clear the browser history
+    [07]: Convert a plain text message in binary code     [18]: Download mp3 audio of a YouTube video
+    [08]: View parrot.live                                [19]: Download mp4 video of YouTube
+    [09]: Credits and info about this proyect
+    [10]: Get my public IP address
 ```
