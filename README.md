@@ -33,3 +33,9 @@ cd redtiger & python BlueWolf.py
 ```shell
 git clone https://github.com/ZombieGeeK0/BlueWolf && cd redtiger && python3 install.py && python3 RedTiger.py
 ```
+
+### 💻 FUNCTIONALITIES 💻
+
+```
+
+```
