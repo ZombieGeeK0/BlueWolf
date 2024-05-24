@@ -2,11 +2,15 @@
 
 ### 🔴 ABOUT 🔴
 
-🇬🇧 --> Tool in english
-🌎 --> Open source
-🦠 --> No malware in it
-💰 --> Free for all users
-💾 --> Developped in Python
+__🇬🇧 --> Tool in english__
+
+__🌎 --> Open source__
+
+__🦠 --> No malware in it__
+
+__💰 --> Free for all users__
+
+__💾 --> Developped in Python__
 
 ### 🏗️ INSTALL & BUILD 🏗️
 
