@@ -3,4 +3,5 @@
 ### 🏗️ INSTALL & BUILD 🏗️
 
 - __On Windows:__
-  - ll
+  - _Download the .zip file and unzip it_
+  - _Launch the install.py file or the windows.bat_
