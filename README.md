@@ -12,6 +12,8 @@ __💰 --> `Free` for all users__
 
 __💾 --> Developped in `Python`__
 
+__♾️ --> Version `1.0`__
+
 > Use BlueWolf with ~~not-ethical~~ ethical purposes
 
 ### 🏗️ INSTALL & BUILD 🏗️
