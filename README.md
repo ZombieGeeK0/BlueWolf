@@ -61,4 +61,7 @@ git clone https://github.com/ZombieGeeK0/BlueWolf && cd redtiger && python3 inst
     [08]: View parrot.live                                [19]: Download mp4 video of YouTube
     [09]: Credits and info about this proyect
     [10]: Get my public IP address
+
+┌── <pc-name@BlueWolf> ─ [~]
+└──╼ $ 
 ```
