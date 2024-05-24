@@ -6,7 +6,7 @@ __🇬🇧 --> Tool in `english`__
 
 __🌎 --> Open `source`__
 
-__🦠 --> No `malware` in i__
+__🦠 --> No `malware` in it__
 
 __💰 --> `Free` for all users__
 
