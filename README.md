@@ -82,9 +82,9 @@ __`The YouTube-Downloader, in the option 18 & 19, is only supported for Windows 
 
 `📎` __Web: <a href="https://zombiegeek0.github.io">zombiegeek0.github.io</a>__
 
-`[ 📬 ]` Contacta conmigo a través de `Discord` mandando una invitación a `qwfkr.`
+`[ 📬 ]` Contact with me in `Discord` sending an invite to `qwfkr.`
 
     qwfkr
-`[ 📬 ]` Si lo prefieres, mándame un <a href="mailto:3xpl017.contact@proton.me">correo</a> a `3xpl017.contact@proton.me.`
+`[ 📬 ]` Send me an email to my <a href="mailto:3xpl017.contact@proton.me">mail</a> `3xpl017.contact@proton.me.`
 
     3xpl017.contact@proton.me.
