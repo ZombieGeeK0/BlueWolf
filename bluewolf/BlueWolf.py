@@ -264,6 +264,14 @@ def history():
 
     ret()
 
+def mp3():
+    try:
+        print()
+    ret()
+
+def mp4():
+    ret()
+
 def main():
     clear()
     title = '''
@@ -289,8 +297,8 @@ def main():
     [04]: Generate false IP address                       [15]: Obtener el espacio que ocupa un archivo
     [05]: Generate false phone number                     [16]: Generate the QR Code of a URL
     [06]: Send WhatsApp message                           [17]: Clear the browser history
-    [07]: Convert a plain text message in binary code
-    [08]: View parrot.live
+    [07]: Convert a plain text message in binary code     [18]: Download mp3 audio of a YouTube video
+    [08]: View parrot.live                                [19]: Download mp4 video of YouTube
     [09]: Credits and info about this proyect
     [10]: Get my public IP address
 '''
@@ -317,6 +325,8 @@ def main():
     elif choice == '15': get_size()
     elif choice == '16': qr_code()
     elif choice == '17': history()
+    elif choice == '18': mp3()
+    elif choice == '19': mp4()
     else: error()
 
 main()
