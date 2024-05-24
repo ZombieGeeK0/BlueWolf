@@ -1,5 +1,7 @@
 # BlueWolf
 
+### :accessibility: ABOUT :accessibility:
+
 ### 🏗️ INSTALL & BUILD 🏗️
 
 - __On Windows:__
