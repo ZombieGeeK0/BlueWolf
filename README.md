@@ -75,6 +75,6 @@ _BlueWolf should always be used for educational and lawful purposes. The author 
 `[ 📬 ]` Contacta conmigo a través de `Discord` mandando una invitación a `qwfkr.`
 
     qwfkr
-`[ 📬 ]` Si lo prefieres, mándame un correo a `3xpl017.contact@proton.me.`
+`[ 📬 ]` Si lo prefieres, mándame un <a href="mailto:3xpl017.contact@proton.me">correo</a> a `3xpl017.contact@proton.me.`
 
     3xpl017.contact@proton.me.
