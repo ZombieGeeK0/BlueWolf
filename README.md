@@ -34,6 +34,10 @@ cd redtiger & python BlueWolf.py
 git clone https://github.com/ZombieGeeK0/BlueWolf && cd redtiger && python3 install.py && python3 RedTiger.py
 ```
 
+### ⚠️ WARNING ⚠️
+
+_BlueWolf should always be used for educational and lawful purposes. The author of this project (ZombieGeeK0), disclaims any responsibility for the data that this tool may cause. Copyright ©2024 BlueWolf_
+
 ### 💻 FUNCTIONALITIES 💻
 
 ```
