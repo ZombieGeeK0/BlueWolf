@@ -2,25 +2,27 @@
 
 ### 🔴 ABOUT 🔴
 
-__🇬🇧 --> Tool in english__
+__🇬🇧 --> Tool in `english`__
 
-__🌎 --> Open source__
+__🌎 --> Open `source`__
 
-__🦠 --> No malware in it__
+__🦠 --> No `malware` in i__
 
-__💰 --> Free for all users__
+__💰 --> `Free` for all users__
 
-__💾 --> Developped in Python__
+__💾 --> Developped in `Python`__
+
+> _Use _
 
 ### 🏗️ INSTALL & BUILD 🏗️
 
 - __On Windows:__
   - _Download the `.zip` file and unzip it_
   - _Launch the `install.py` file or the `windows.bat`_
-  - _Acces to the folder and execute the `RedTiger.py`_
+  - _Acces to the folder and execute the `BlueWolf.py`_
 
 ```shell
-cd redtiger & python RedTiger.py
+cd redtiger & python BlueWolf.py
 ```
 
 - __On Windows:__
