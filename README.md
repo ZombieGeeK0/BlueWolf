@@ -14,6 +14,8 @@ __💾 --> Developped in `Python`__
 
 __♾️ --> Version `1.0`__
 
+__📎 --> Web page: <a href="zombiegeek0.github.io">here</a>__
+
 > Use BlueWolf with ~~not-ethical~~ ethical purposes
 
 ### 🏗️ INSTALL & BUILD 🏗️
