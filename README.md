@@ -76,7 +76,7 @@ _BlueWolf should always be used for educational and lawful purposes. The author 
 
 ### 🐛 BUGS & ERRORS 🐛
 
-<span style="color:red">The YouTube-Downloader, in the option 18 & 19, is only supported for Windows 10, no Windows 11. The problem is "command not found"</span>
+<span style="color:red">The YouTube-Downloader, in the option 18 & 19, is only supported for Windows 10, no Windows 11. The problem is command not found</span>
 
 <hr>
 
