@@ -302,7 +302,7 @@ def main():
                     ░    ░   ░ ░    ░░░ ░ ░    ░     ░   ░  ░ ░ ░ ▒    ░ ░    ░ ░    
                     ░          ░  ░   ░        ░  ░    ░        ░ ░      ░  ░        
                         ░                                                  
-                            [&]: BlueWolf By ZombieGeeK0 
+                            [&]: BlueWolf By ZombieGeeK0 (zombiegeek0.github.io)
                             [&]: GitHub: https://github.com/ZombieGeeK0        
 '''
     print(color.BLUE + title)
