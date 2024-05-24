@@ -74,6 +74,8 @@ _BlueWolf should always be used for educational and lawful purposes. The author 
 
 <hr>
 
+`📎` __Web: <a href="zombiegeek0.github.io">zombiegeek0.github.io</a>__
+
 `[ 📬 ]` Contacta conmigo a través de `Discord` mandando una invitación a `qwfkr.`
 
     qwfkr
