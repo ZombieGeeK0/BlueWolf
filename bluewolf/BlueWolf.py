@@ -266,10 +266,26 @@ def history():
 
 def mp3():
     try:
-        print()
+        print(color.WHITE + '\n[&] The version is only support for ' + color.BLUE + 'Windows')
+        choice = input(color.WHITE + '\n[&] Enter the URL of the YouTube video to download mp3: ')
+        os.system(f'youtube-download-cli "{choice}" mp3')
+        print(color.WHITE + '[&] The audio was saved in the ' + color.BLUE + 'downloads ' + color.WHITE + 'folder')
+        
+    except:
+        error()
+        
     ret()
 
 def mp4():
+    try:
+        print(color.WHITE + '\n[&] The version is only support for ' + color.BLUE + 'Windows')
+        choice = input(color.WHITE + '\n[&] Enter the URL of the YouTube video to download mp3: ')
+        os.system(f'youtube-download-cli "{choice}" mp3')
+        print(color.WHITE + '[&] The video was saved in the ' + color.BLUE + 'downloads ' + color.WHITE + 'folder'),
+
+    except:
+        error()
+        
     ret()
 
 def main():
