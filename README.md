@@ -12,7 +12,7 @@ __💰 --> `Free` for all users__
 
 __💾 --> Developped in `Python`__
 
-> _Use _
+> Use BlueWolf with ~~not-ethical~~ ethical purposes
 
 ### 🏗️ INSTALL & BUILD 🏗️
 
