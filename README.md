@@ -1,6 +1,12 @@
 # BlueWolf
 
-### :accessibility: ABOUT :accessibility:
+### 🔴 ABOUT 🔴
+
+🇬🇧 --> Tool in english
+🌎 --> Open source
+🦠 --> No malware in it
+💰 --> Free for all users
+💾 --> Developped in Python
 
 ### 🏗️ INSTALL & BUILD 🏗️
 
