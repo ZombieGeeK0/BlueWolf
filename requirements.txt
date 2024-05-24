@@ -9,3 +9,4 @@ sqlite3
 platform
 Faker
 PyPDF2
+youtube-download-cli
