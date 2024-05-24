@@ -1,1 +1,11 @@
-
+colorama
+socket
+requests
+pywhatkit
+pyshorteners
+pybase64
+qrcode
+sqlite3
+platform
+Faker
+PyPDF2
