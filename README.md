@@ -36,7 +36,7 @@ git clone https://github.com/ZombieGeeK0/BlueWolf && cd redtiger && python3 inst
 
 ### ⚠️ WARNING ⚠️
 
-_BlueWolf should always be used for educational and lawful purposes. The author of this project (ZombieGeeK0), disclaims any responsibility for the data that this tool may cause. Copyright ©2024 BlueWolf_
+_BlueWolf should always be used for educational and lawful purposes. The author of this project (ZombieGeeK0), disclaims any responsibility for the data that this tool may cause. <a href="https://github.com/ZombieGeeK0/BlueWolf?tab=MIT-1-ov-file">Copyright</a> ©2024 BlueWolf_
 
 ### 💻 FUNCTIONALITIES 💻
 
