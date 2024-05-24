@@ -14,7 +14,7 @@ __💾 --> Developped in `Python`__
 
 __♾️ --> Version `1.0`__
 
-__📎 --> Web page: <a href="zombiegeek0.github.io" target="_blank">here</a>__
+__📎 --> Web page: <a href="https://zombiegeek0.github.io">here</a>__
 
 > Use BlueWolf with ~~not-ethical~~ ethical purposes
 
@@ -76,7 +76,7 @@ _BlueWolf should always be used for educational and lawful purposes. The author 
 
 <hr>
 
-`📎` __Web: <a href="zombiegeek0.github.io" target="_blank">zombiegeek0.github.io</a>__
+`📎` __Web: <a href="https://zombiegeek0.github.io">zombiegeek0.github.io</a>__
 
 `[ 📬 ]` Contacta conmigo a través de `Discord` mandando una invitación a `qwfkr.`
 
